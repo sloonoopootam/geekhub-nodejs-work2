@@ -14,8 +14,8 @@ function toCompare(array1, array2) {
     return array1
         .sort()
         .map((v, i) => {
-        if(v === array2.sort()[i]) return counter.push(1);
-    });
+            if (v === array2.sort()[i]) return counter.push(1);
+        });
 }
 
 const compareResult = toCompare(strArray1, strArray2);

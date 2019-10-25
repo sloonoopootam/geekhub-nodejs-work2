@@ -5,19 +5,19 @@ const N = Math.round(1 + Math.random() * 15);
 const numArray = [];
 
 let pushArray = (function arrPusher() {
-  do {
-    let item = numArray.push(Math.round(1 + Math.random() * 10));
-   } while (numArray.length < N);
+    do {
+        let item = numArray.push(Math.round(1 + Math.random() * 10));
+    } while (numArray.length < N);
 }());
 
 console.log(numArray);
 
 const foobarArray = function foobar(array) {
-   return array
+    return array
         .map(a => {
-            if(!(a % 3) && !(a % 7)) return "foobar";
-            if(!(a % 3)) return "foo";
-            if(!(a % 7)) return "bar";
+            if (!(a % 3) && !(a % 7)) return "foobar";
+            if (!(a % 3)) return "foo";
+            if (!(a % 7)) return "bar";
             return a;
         });
 };
